@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acronym Lookup for Taylor Swift Songs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        #resultsTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        #resultsTable th, #resultsTable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        #resultsTable th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Acronym Lookup for Taylor Swift Songs</h1>
+    <p>Enter the acronym for a Taylor Swift song lyric to search:</p>
+    <input type="text" id="acronymInput" placeholder="Enter acronym..." style="width: 300px;" onkeydown="if (event.key === 'Enter') searchAcronym();">
+    <button onclick="searchAcronym()">Search</button>
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Song Title</th>
+                <th>Matching Lyric</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Results will be populated here -->
+        </tbody>
+    </table>
+    <script src="acronymLookup.js"></script>
+</body>
+</html>
